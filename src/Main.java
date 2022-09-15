@@ -77,24 +77,35 @@ public class Main {
 
         // Задача №4
         System.out.println("Задача 4");
-        int friday = 3;
-        System.out.printf("Сегодня пятница, %d-е число. Необходимо подготовить отчет \n", friday); // почему System.out.printf? Что дает эта контсрукция?
-        while (friday < 31) {
-            friday = friday + 7;
-            if (friday <= 31) {
-                System.out.printf("Сегодня пятница, %d-е число. Необходимо подготовить отчет \n", friday); // как работает вот это "%d-е" ?
+        for (int Friday = 5; Friday <= 31; Friday++) {
+            if (Friday % 7 == 0) {
+                System.out.println("Сегодня пятница, " + Friday + "-ое число, нужно подготовить отчет");
             }
-        } // подскажите пожалуйста, как можно эту задачу решить иначе, используя то, что мы проходили?
+        }
 
         // Домашка №3
         System.out.println("Домашка 3");
+
         // Задача №1
         System.out.println("Задача 1");
-        int year = 0;
-        year = year + 79;
+        for (int year = 1896; year < 2122; year = year + 79) {
+            System.out.println("Комета пролетала рядом с Землей в " + year + " году" + " ");
+        }
 
-        // не могу решить задачи 1, 2 в части "Домашнее задание - 3"
-        // подскажите, будет ли разбор?
 
+        // Задача №2
+        System.out.println("Задача 2");
+        for (int i5 = 2; i5 <= 2; i5 ++) {
+            for (int t = 1; t <= 10; t++){
+                System.out.println (i5 + " * " + t + " = " + i5*t);
+            }
+            System.out.println();
+        }
+
+
+        }
     }
-}
+
+
+
+
